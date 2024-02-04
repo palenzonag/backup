@@ -1,0 +1,142 @@
+
+
+/* mediante CLASS */
+
+main .div-uno{
+    background-color: lightsalmon;
+}
+
+main .div-dos{
+    background-color: lightsalmon;
+}
+
+/* mediante ID */
+ #footer{
+    background-color: black;
+    color: whitesmoke;
+}
+
+/* unidades de medida */
+/* absolutas y relativas */
+
+
+h1{
+    font-size: 2rem;
+    background-color: orangered;
+
+}
+
+
+
+
+/* nomenclaturas */
+
+/* camelcase */
+
+
+
+/* reset */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+  
+
+
+
+/* FLEX */
+
+
+
+main h1{
+    text-align: center;
+}
+main h2{
+    text-align: center;
+}
+
+.perfumes-mujer h1{
+text-align: center;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.logo{
+
+    width: 10px;
+    height: 60px;
+    
+}
+
+.grid-container{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 35%);
+    gap: 30px;
+    align-content: center;
+    margin: 40px
+
+
+}
+
+footer p{
+
+    text-align: center;
+    color: lightgreen;
+}
+
+
+
+.img{
+    width: 100%;
+    height: 100%;
+
+}
+
+/* estilos de main */
+main .img-cuatro{
+    display: none;
+}
+
+main div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* estilos de tablet */
+
+@media screen and (min-width:600px){
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    .grid-container .img-tres{
+        grid-column: span 2;
+    }
+    }
+
+/* estilos dekstop */
+
+@media screen and (min-width:1024px){
+    .grid-container .img-cuatro{
+        display: block;
+    }
+    .grid-container{
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: 35% 35% 35%;
+    }
+
+    .grid-container .img-cuatro{
+        grid-column: span 2;
+        
+    }
+    
+    }
+    
+    
